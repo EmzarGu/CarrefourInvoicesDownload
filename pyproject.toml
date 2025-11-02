@@ -1,0 +1,17 @@
+[project]
+name = "carrefour-invoices-downloader"
+version = "0.1.0"
+description = "Automation script to download Carrefour invoices"
+authors = [{name = "Automation Bot"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.44.0",
+]
+
+[project.scripts]
+carrefour-download = "carrefour_downloader.cli:main"
+
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
